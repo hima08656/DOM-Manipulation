@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Interaction Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        input {
+            margin: 8px 0;
+            padding: 6px;
+            width: 200px;
+        }
+        
+        button {
+            margin: 8px 8px 8px 0;
+            padding: 6px 12px;
+        }
+        
+        #output-box {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: lightgray;
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Interactive DOM Box</h2>
+
+    <!-- Input for color -->
+    <label for="color-input">Enter color name:</label><br />
+    <input type="text" id="color-input" placeholder="e.g. red, blue, green" /><br />
+
+    <!-- Input for text -->
+    <label for="text-input">Enter text content:</label><br />
+    <input type="text" id="text-input" placeholder="Type your message here" /><br />
+
+    <!-- Buttons -->
+    <button id="bg-btn">Change Background</button>
+    <button id="text-btn">Update Text</button>
+
+    <!-- Target div -->
+    <div id="output-box">This is the default content.</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
